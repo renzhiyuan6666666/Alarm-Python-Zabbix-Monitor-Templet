@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.0</version>
+    <date>2017-01-16T08:09:53Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+        <group>
+            <name>WinServer</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Windows Event Log</template>
+            <name>Template Windows Event Log</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+                <group>
+                    <name>WinServer</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Event Log</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>登录审核失败</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>eventlog[Security,,&quot;Failure Audit&quot;,,^6281$,,skip]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Event Log</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>账户登录成功</name>
+                    <type>7</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>eventlog[Security,,&quot;Success Audit&quot;,,^4624$,,skip]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Remote Server 账户登录成功</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Event Log</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens>
+                <screen>
+                    <name>System performance</name>
+                    <hsize>2</hsize>
+                    <vsize>2</vsize>
+                    <screen_items/>
+                </screen>
+            </screens>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template Windows Event Log:eventlog[Security,,&quot;Failure Audit&quot;,,^6281$,,skip].nodata(60)}=0 and {Template Windows Event Log:eventlog[Security,,&quot;Failure Audit&quot;,,^6281$,,skip].str(Advapi)}=0</expression>
+            <name>Windows登录审核失败 on {HOST.NAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template Windows Event Log:eventlog[Security,,&quot;Success Audit&quot;,,^4624$,,skip].nodata(60)}=0 and&#13;
+{Template Windows Event Log:eventlog[Security,,&quot;Success Audit&quot;,,^4624$,,skip].str(Advapi)}=0</expression>
+            <name>Windows账户登录成功 on {HOST.NAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>Windows账户登录成功</description>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+    </triggers>
+</zabbix_export>
