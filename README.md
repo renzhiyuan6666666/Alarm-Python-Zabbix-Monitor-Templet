@@ -1,8 +1,8 @@
 # Alarm-Zabbix-for-Windows-login
 目的：zabbix监控报警Windows用户登陆
 环境：
-zabbix Server（可proxy代理）
-Windows（个人pc或者Server版本）
+zabbix Server：（可proxy代理）
+Windows：（个人pc或者Server版本）
 
 步骤可参考博客：
 1、http://renzhiyuan.blog.51cto.com/10433137/1892355
