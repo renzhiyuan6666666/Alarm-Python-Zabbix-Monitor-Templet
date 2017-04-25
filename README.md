@@ -4,9 +4,9 @@
 
   环境：
   
-  zabbix Server：（可proxy代理）
+  zabbix Server：(可proxy代理)
   
-  Windows：（pc或者Server版本）
+  Windows：(pc或者Server版本)
 
   步骤可参考博主博客：
   
