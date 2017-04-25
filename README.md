@@ -8,7 +8,6 @@
     2、代码模块：
     git@github.com:renzhiyuan6666666/Alarm-Zabbix-for-Windows-login.git
     3、效果展示：
-    ![image](https://s4.51cto.com/wyfs02/M01/92/59/wKiom1j-wzrxNikIAAC1_oVSFrg715.png）
     告警主机:pc-renzhiyuan
     告警时间:2017.04.19 08:39:30
     告警等级:Disaster
