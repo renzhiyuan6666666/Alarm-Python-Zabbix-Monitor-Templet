@@ -25,5 +25,6 @@
 
   5、zabbix自定义监控MySQL
   5.1、可参考博客://renzhiyuan.blog.51cto.com/10433137/1920303
+  
   5.2 效果展示
-   ![image](https://s1.51cto.com/wyfs02/M01/92/BD/wKiom1kClr3ydO8GAACVSpj3o0o455.png）
+  ![image](https://s1.51cto.com/wyfs02/M01/92/BD/wKiom1kClr3ydO8GAACVSpj3o0o455.png)
