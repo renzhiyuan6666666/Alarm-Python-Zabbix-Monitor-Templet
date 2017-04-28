@@ -21,14 +21,14 @@
   
   ![image](https://s4.51cto.com/wyfs02/M01/92/59/wKiom1j-wzrxNikIAAC1_oVSFrg715.png)
   
-  #4、效果展示zabbix自定义key进程监控
+  # 4、效果展示zabbix自定义key进程监控
   
   ![image](https://s1.51cto.com/wyfs02/M02/92/B0/wKioL1kB1D3QQBHwAAC9NEHi7B8684.png)
 
-  #5、zabbix自定义监控MySQL
+  # 5、zabbix自定义监控MySQL
   
   5.1、可参考博客:http://renzhiyuan.blog.51cto.com/10433137/1920303
   
-  5.2 效果展示
+  5.2 效果展示zabbix监控MySQL
   
   ![image](https://s1.51cto.com/wyfs02/M01/92/BD/wKiom1kClr3ydO8GAACVSpj3o0o455.png)
